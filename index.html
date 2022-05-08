@@ -1,0 +1,41 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="gamelogo"><img src="img/dice-g6a8274b78_1280.png" alt="The Roll The Dice Game"/></div>
+            <div id="dblmessage"></div>
+            <h1 id="message">Player 1 Turn</h1>
+            <div class="players">
+                <div id="player1">
+                    <h1>Score: 
+                        <span id="player1Scoreboard">0</span>
+                    </h1>
+                    <div id="player1Dice" class="dice active">-</div>
+                </div>
+                <div id="player2">
+                    <h1>Score: 
+                        <span id="player2Scoreboard">0</span>
+                    </h1>
+                    <div id="player2Dice" class="dice">-</div>
+                </div>
+            </div>
+
+            <button id="rollBtn">Roll Dice 🎲</button><button id="dblBtn">Double or nothing!</button>
+            <button id="resetBtn">Reset Game 🔁</button>
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="modal">
+                <div class="gamelogo"><img src="img/dice-g6a8274b78_1280.png" alt="The Roll The Dice Game"/></div>
+                <h1>Who starts the Game ?</h1>
+                <p>Player 1 random Number: <span id="p1num">-</span></p>
+                <p>Player 2 random Number: <span id="p2num">-</span></p>
+                <p id="startGameMessage"></p>
+                <button id="rollBtnStart">Player 1 roll Number now</button><button id="startGameBtn">Start Game</button>
+                <p>Player with higher Number between 1-100 starts the Game.</p>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
